@@ -10,7 +10,6 @@ pipeline
     {
        steps 
        {
-        echo 'TEST JENKINS FILE' 
         script 
         {
           buildSOA([soaAppPath:'test', soaAppName: 'app name', soaProjName: 'proj name', appsList: appsList])
