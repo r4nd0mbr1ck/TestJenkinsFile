@@ -1,5 +1,6 @@
 @Library('test')_
 
+def appsList = ['a','b','c']
 pipeline
 {
   agent any
@@ -11,7 +12,7 @@ pipeline
        {
         script 
         {
-          buildSOA([soaAppPath:'test', soaAppName: 'app name', soaProjName: 'proj name'])
+          buildSOA([soaAppPath:'test', soaAppName: 'app name', soaProjName: 'proj name', appsList: appsList])
         }
        }
     }
