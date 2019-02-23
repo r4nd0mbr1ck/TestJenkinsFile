@@ -10,6 +10,7 @@ pipeline
     {
        steps 
        {
+        echo 'Test Jenkins File'
         script 
         {
           buildSOA([soaAppPath:'test', soaAppName: 'app name', soaProjName: 'proj name', appsList: appsList])
